@@ -1,1 +1,3 @@
+# ide 세팅파일 무시
 .idea/
+.vscode/
