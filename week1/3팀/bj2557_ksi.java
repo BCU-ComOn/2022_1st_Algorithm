@@ -1,6 +1,4 @@
-package week1;
-
-public class BJ2557_ksi {
+public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
