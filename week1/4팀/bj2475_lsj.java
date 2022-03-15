@@ -1,35 +1,34 @@
-package week1;
-// ¸ñÇ¥ : °ËÁõ¼ö 5°³ÀÇ Á¦°ö°ªÀ» ¸ğµÎ ÇÕÄ£ µÚ ³ª´©±â 10ÇÑ °ª Ãâ·Â
-
 import java.util.Scanner;
 
 public class bj2475_lsj {
-	// ÀÔ·Â ÇÔ¼ö
+	// ì…ë ¥ë¶€
 	public static String value_input() {
 		Scanner input=new Scanner(System.in);
-		return input.nextLine();
+		String str=input.nextLine();
+		input.close();
+		return str;
 	}
-	//¹®ÀÚ¿­À» ³ª´©¾î 5°³ÀÇ Á¤¼ö·Î º¯È¯ÇÏ´Â ÇÔ¼ö
+	// ì…ë ¥ë°›ì€ ê°’ì„ ì •ìˆ˜ë¡œ ë°”ê¾¸ëŠ” í•¨ìˆ˜
 	public static int[] extract_value(String str) {
-		//Á¤¼ö°¡ µé¾î°¥ ¹è¿­ ¼±¾ğ
+		//ì •ìˆ˜ë¡œ ë³€í™˜ëœ ê°’ì„ ì €ì¥í•  ë³€ìˆ˜ ì„ ì–¸
 		int[] keys=new int[5];
-		//¹®ÀÚ¿­ ³ª´©±â
+		//ë¬¸ìì—´ì„ ê³µë°± ê¸°ì¤€ìœ¼ë¡œ ë‚˜ëˆ”
 		String[] strArr=str.split(" ");
-        //³ª´« ¹®ÀÚ¿­À» °¢°¢ Á¤¼öÈ­ÇÏ¿© ¹è¿­¿¡ ³Ö±â
+        //ë‚˜ëˆ ì§„ ë¬¸ìì—´ì„ ê°ê° ì •ìˆ˜ë¡œ ë³€í™˜í•´ keys ë°°ì—´ì— ì €ì¥
 		for(int count=0;count<5;count++) {
 			keys[count]=Integer.parseInt(strArr[count]);
 		}
 		return keys;
 	}
-	//°ªÀ» ¸ğµÎ Á¦°öÇÏ¿© 10À» ³ª´² ³ª¸ÓÁö¸¦ ±¸ÇÏ´Â ÇÔ¼ö
+	//ê²°ê³¼ê°’ì„ êµ¬í•´ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜
 	public static int result(int[] arr) {
-		//Á¦°öµÈ °ªÀÇ ÇÕÀÌ ÀúÀåµÉ º¯¼ö ¼±¾ğ
+		//ë”í•œ ê°’ì„ ì €ì¥í•  ë³€ìˆ˜ ì„ ì–¸
 		int sum=0;
-		//¹è¿­ ¾ÈÀÇ °ªÀ» Á¦°öÇÏ¿© sum¿¡ ´õÇÏ´Â °Í
+		//ë°°ì—´ì˜ ê°’ì„ ëª¨ë‘ ì œê³±í•œ ë’¤ í•˜ë‚˜ì”© ë”í•´ sumì— ì €ì¥
 		for(int count=0;count<5;count++) {
 			sum+=arr[count]*arr[count];
 		}
-		//°ª ¹İÈ¯
+		//sumì— ë‚˜ë¨¸ì§€ 10 ì—°ì‚° í›„ ë°˜í™˜
 		return sum%10;
 	}
 	

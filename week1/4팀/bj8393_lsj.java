@@ -1,20 +1,21 @@
-package week1;
-
+// ëª©í‘œ : nì„ ìž…ë ¥ë°›ì•„ 1ë¶€í„° nê¹Œì§€ ì¶œë ¥
 import java.util.Scanner;
 public class bj8393_lsj {
-	//°ªÀ» ÀÔ·Â¹Þ´Â ÇÔ¼ö
+	//ê°’ì„ ìž…ë ¥ë°›ëŠ” ë¶€ë¶„
 	public static int user_input() {
 		Scanner input=new Scanner(System.in);
-		return input.nextInt();
+		int value=input.nextInt();
+		input.close();
+		return value;
 	}
-	//ÀÔ·ÂµÈ °ªÀÌ ¿Ã¹Ù¸¥Áö È®ÀÎÇÏ´Â ÇÔ¼ö
+	//ìž…ë ¥ë°›ì€ ê°’ì˜ ì¡°ê±´ í™•ì¸
 	public static boolean check(int value) {
 		if (value>=1 || value<=10000) {
 			return true;
 		}
 		return false;
 	}
-	//1ºÎÅÍ n±îÁöÀÇ ÇÕÀ» ±¸ÇØ ¹ÝÈ¯ÇÏ´Â ÇÔ¼ö
+	//1ë¶€í„° nê¹Œì§€ ë”í•œ ê°’ì„ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜
 	public static int sum(int value) {
 		int summary=0;
 		for(int count=0;count<=value;count++) {
@@ -23,11 +24,11 @@ public class bj8393_lsj {
 		return summary;
 	}
 	
-	//½ÇÇàºÎ Main
+	// Main ì‹¤í–‰ë¶€
 	public static void main(String[] args) {
-		//°ª ÀÔ·Â¹Þ±â
+		//ëª©í‘œê°’ì„ ìž…ë ¥ë°›ëŠ” ë¶€ë¶„
 		int input_value=user_input();
-		//°ªÀÌ ¿Ã¹Ù¸¥Áö È®ÀÎ ÈÄ ½ÇÇà
+		//ìž…ë ¥ê°’ì´ ìœ íš¨í•œì§€ í™•ì¸ í›„ ê²°ê³¼ë¥¼ êµ¬í•´ ì¶œë ¥
 		if(check(input_value)) {
 			System.out.println(sum(input_value));
 		}

@@ -1,17 +1,15 @@
-package week1;
-//¸ñÇ¥ : a+bÀÇ °ªÀ» Ãâ·Â
-// ÀÓÆ÷Æ® ½ºÄ³³Ê
+//ëª©í‘œ : A+B ê°’ ì¶œë ¥
 import java.util.Scanner;
 
 public class bj2558_lsj {
-	//ÀÔ·Â ÇÔ¼ö
+	// ì…ë ¥ë¶€
 	public static int[] user_input() {
 		Scanner input= new Scanner(System.in);
 		int[] value= {input.nextInt(),input.nextInt()};
 		input.close();
 		return value;
 	}
-	//°è»ê ÇÔ¼ö
+	//A+B ì—°ì‚°ë¶€
 	public static int summary(int a,int b) {
 		return a+b;
 	}

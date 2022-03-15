@@ -1,35 +1,34 @@
-package week1;
-
+//ëª©í‘œ : R2ì˜ ê°’ì„ ì°¾ì•„ ì¶œë ¥
 import java.util.Scanner;
 public class bj3046_lsj {
-	//°ªÀ» ÀÔ·Â¹Þ´Â ºÎºÐ
+	//R1ê³¼ S ê°’ì„ ìž…ë ¥ë°›ëŠ” ìž…ë ¥ë¶€
 	public static int[] input() {
 		Scanner input = new Scanner(System.in);
 		int[] result= {input.nextInt(),input.nextInt()};
+		input.close();
 		return result;
 	}
-	//R2°ªÀ» Ã£´Â ÇÔ¼ö
+	//R2ì˜ ê°’ì„ ì°¾ëŠ” í•¨ìˆ˜
 	public static int find_R2(int[] val) {
-		//Æò±ÕX2-R1 = R2¸¦ ÀÌ¿ëÇÑ °á°ú
+		// S*2-R1= R2 
 		int result=val[1]*2-val[0];
 		return result;
 	}
-	//ÀÔ·ÂµÈ °ªÀÌ ¿Ã¹Ù¸¥Áö È®ÀÎÇÏ´Â ÇÔ¼ö
+	//ìž…ë ¥ë°›ì€ ê°’ì— ëŒ€í•œ ì¡°ê±´ í™•ì¸
 	public static boolean validation_check(int[] val) {
 		int a=val[0];
 		int b=val[1];
-		//Á¶°Ç È®ÀÎ
 		if((a>1000||a<-1000)||(b>1000||b<-1000)) {
 			return false;
 		}
 		return true;
 	}
 	
-	//½ÇÇàºÎ
+	// Main ì‹¤í–‰ë¶€
 	public static void main(String[] args) {
-		// °ª ÀÔ·Â
+		// ê°’ì„ ìž…ë ¥ë°›ì•„ ë°°ì—´ì— ì €ìž¥
 		int[] input_val=input();
-		// Á¶°Ç È®ÀÎ ÈÄ R2¸¦ Ã£¾Æ Ãâ·Â
+		// ìž…ë ¥ë°›ì€ ê°’ì´ ìœ íš¨í•œì§€ í™•ì¸ í›„ R2ë¥¼ ì°¾ì•„ ì¶œë ¥
 		if(validation_check(input_val)) {
 			int result=find_R2(input_val);
 			System.out.println(result);
