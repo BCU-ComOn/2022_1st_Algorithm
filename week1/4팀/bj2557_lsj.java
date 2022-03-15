@@ -1,10 +1,9 @@
-package week1;
-//¸ñÇ¥ : Hello World! Ãâ·Â
+// ëª©í‘œ : "Hello World!" ì¶œã„¹ë ¥
 
 public class bj2557_lsj {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// ì¶œë ¥
 		System.out.println("Hello World!");
 	}
 
