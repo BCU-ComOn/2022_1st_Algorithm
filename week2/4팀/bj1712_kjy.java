@@ -2,7 +2,7 @@ package Week02;
 
 import java.util.Scanner;
 
-public class Main {
+public class bj1712_kjy.java {
 
 	public static void main(String[] args) {
 
