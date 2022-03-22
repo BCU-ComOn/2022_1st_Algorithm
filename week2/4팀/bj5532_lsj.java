@@ -1,5 +1,7 @@
 
 import java.util.Scanner;
+
+// 목표 : 총 방학일수, 수학 숙제의 총량, 국어 숙제의 총량, 일당 최대 수학 풀이, 일당 최대 국어 풀이를 입력받고 숙제를 다하고 걱정 없이 놀 수 있는 최대 일수를 구하라.
 public class bj5532_lsj {
 	// 입력부
 	public static int[] input_value() {
