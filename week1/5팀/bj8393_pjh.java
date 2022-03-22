@@ -1,6 +1,6 @@
 package test1;
 import java.util.Scanner;
-public class bj8393_pjh  {
+public class Main {
 	    public static void main(String[] args) {
 	        Scanner tes = new Scanner(System.in);
 	        int a = tes.nextInt();
