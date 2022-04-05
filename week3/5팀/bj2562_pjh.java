@@ -12,7 +12,7 @@ public class Bj_2562 {
 		for (int i = 0; i<natural_number.length;i++) {
 			if (natural_number[i] > max) {
 				max = natural_number[i];
-				index = i+1;
+			index =	 i+1;
 			}
 					}
 	System.out.println("최대값 : "+max);
